@@ -1,5 +1,5 @@
 import unittest
-from TAU1.main import Calculator
+from TAU1.calculator.calculator import Calculator
 
 
 class TestCalculator(unittest.TestCase):
