@@ -17,9 +17,10 @@ search_box.send_keys("Echo Dot")
 search_box.send_keys(Keys.RETURN)
 print("Wyszukiwanie produktu zostało wykonane.")
 
-
+# Oczekiwanie na załadowanie wyników wyszukiwania
 time.sleep(2)
 
+# Weryfikacja wyników
 if "Echo Dot" in driver.page_source:
     print("Test zakończony sukcesem - znaleziono wyniki wyszukiwania.")
 else:
