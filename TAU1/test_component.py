@@ -1,38 +1,41 @@
 import unittest
-from TAU1 import main as main
+from TAU1.main import Calculator
 
 
-class TestMain(unittest.TestCase):
+class TestCalculator(unittest.TestCase):
+    def setUp(self):
+        self.calculator = Calculator()
 
-    def test_sum_equals(self):
-        self.assertEqual(main.sum(5, 5), 10)
+    def test_add(self):
+        self.assertEqual(self.calculator.add(2, 3), 5)
 
-    def test_sum_notequals(self):
-        self.assertNotEqual(main.sum(15, 25), 159)
+    def test_subtract(self):
+        self.assertEqual(self.calculator.subtract(5, 3), 2)
 
-    def test_if_true(self):
-        self.assertTrue(main.is_true(5, 5))
+    def test_multiply(self):
+        self.assertEqual(self.calculator.multiply(2, 3), 6)
 
-    def test_if_false(self):
-        self.assertFalse(main.is_true(10, 9))
+    def test_divide(self):
+        self.assertEqual(self.calculator.divide(6, 3), 2.0)
 
-    def test_if_greater(self):
-        self.assertGreater(main.multiplication(2, 2), 3)
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.calculator.divide(5, 0)
 
-    def test_if_less(self):
-        self.assertLess(main.multiplication(2, 2), 10)
+    def test_add_is_not_none(self):
+        self.assertIsNotNone(self.calculator.add(2, 2))
 
-    def test_if_list_equal(self):
-        self.assertListEqual(main.example_list(['yes', 'no']), main.example_list(['yes', 'no']))
+    def test_subtract_not_equal(self):
+        self.assertNotEqual(self.calculator.subtract(2, 2), 1)
 
-    def test_if_item_in_list(self):
-        self.assertIn(main.example_string('yes'), 'yes')
+    def test_multiply_greater_than(self):
+        self.assertGreater(self.calculator.multiply(3, 3), 8)
 
-    def test_if_item_not_in_list(self):
-        self.assertNotIn(main.example_string('yes'), 'no')
+    def test_divide_less_than(self):
+        self.assertLess(self.calculator.divide(1, 2), 1)
 
-    def test_if_is_not_none(self):
-        self.assertIsNotNone(main.multiplication(2, 2))
+    def test_multiply_is_instance(self):
+        self.assertIsInstance(self.calculator.multiply(2, 2), int)
 
 if __name__ == '__main__':
     unittest.main()

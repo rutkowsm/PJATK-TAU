@@ -1,14 +1,15 @@
-def sum(n1,n2):
-    return n1+n2
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
-def is_true(n1,n2):
-    return True if(n1 == n2) else False
+    def subtract(self, a, b):
+        return a - b
 
-def multiplication(n1,n2):
-    return n1*n2
+    def multiply(self, a, b):
+        return a * b
 
-def example_list(list):
-    return list
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero.")
+        return a / b
 
-def example_string(string):
-    return string
