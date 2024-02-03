@@ -1,14 +1,14 @@
 
 Testowanie Wydajnościowe za pomocą Apache JMeter
 1. Obiekt Testowy: Strona primate.diet
-2. 
+   
 Opis Testu
 Test ma na celu ocenę wydajności strony internetowej primate.diet. W tym teście użyto narzędzia Apache JMeter do symulacji obciążenia.
 
-Ustawienia Testu 1
-Liczba Użytkowników: 50
-Okres Rozruchu: 5 sekund
-Powtórzenia: 2
+Ustawienia Testu 1:
+- Liczba Użytkowników: 50
+- Okres Rozruchu: 5 sekund
+- Powtórzenia: 2
 
 Wyniki w tabeli:
 
@@ -23,10 +23,10 @@ Agregacja:
 ![image](https://github.com/rutkowsm/PJATK-TAU/assets/37616390/4b21ad7f-8f4b-4448-a87d-3a5e959402e6)
 
 
-Ustawienia Testu 2
-Liczba Użytkowników: 1000
-Okres Rozruchu: 5 sekund
-Powtórzenia: 4
+Ustawienia Testu 2:
+- Liczba Użytkowników: 1000
+- Okres Rozruchu: 5 sekund
+- Powtórzenia: 4
 
 Wyniki w tabeli:
 
