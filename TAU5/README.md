@@ -35,7 +35,9 @@ Wyniki w tabeli:
 
 Graf:
 
+![image](https://github.com/rutkowsm/PJATK-TAU/assets/37616390/0c3c62f1-8ded-47ed-8991-22eaafc01bbd)
 
 
 Agregacja:
 
+![image](https://github.com/rutkowsm/PJATK-TAU/assets/37616390/6262d873-24b3-418d-b2f9-da5d0ad460aa)
