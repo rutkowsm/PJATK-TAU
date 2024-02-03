@@ -41,3 +41,15 @@ Graf:
 Agregacja:
 
 ![image](https://github.com/rutkowsm/PJATK-TAU/assets/37616390/6262d873-24b3-418d-b2f9-da5d0ad460aa)
+
+
+Analiza wyników:
+
+- Min: 3968 ms (minimalny czas odpowiedzi) - pokazuje najlepszy czas reakcji serwera na żądanie.
+- Max: 159230 ms (maksymalny czas odpowiedzi) - wskazuje na najdłuższy czas odpowiedzi, co może sygnalizować potencjalne wąskie gardła lub problemy z wydajnością pod dużym obciążeniem.
+- Średnia: 25770 ms - średni czas odpowiedzi jest stosunkowo wysoki, co może wskazywać na to, że użytkownicy doświadczają zauważalnych opóźnień.
+- Odstępstwo standardowe: 21040 - duże odstępstwo standardowe wskazuje na znaczną zmienność czasów odpowiedzi, co może świadczyć o nierównomiernym rozkładzie obciążenia lub niestabilności serwera.
+- Percentyl 90%: 63873 ms - 90% żądań zostało obsłużonych w czasie krótszym niż 63.873 sekundy, co nadal jest dość długim czasem oczekiwania.
+- ERROR %: 94,96% - Ten wysoki wskaźnik błędów wskazuje na poważne problemy z aplikacją lub infrastrukturą, które uniemożliwiają prawidłowe funkcjonowanie pod obciążeniem generowanym przez 1000 jednoczesnych użytkowników.
+
+Aplikacja prawdopodobnie napotyka krytyczne błędy podczas przetwarzania żądań, co może być spowodowane przeciążeniem serwera, problemami z kodem aplikacji, problemami z bazą danych lub innymi ograniczeniami systemowymi. Na podstawie analizy może być konieczne optymalizowanie kodu aplikacji, zapytań do bazy danych, konfiguracji serwera (np. pule połączeń, timeouty) oraz infrastruktury (np. load balancing, skalowanie).
