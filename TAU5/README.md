@@ -43,7 +43,7 @@ Agregacja:
 ![image](https://github.com/rutkowsm/PJATK-TAU/assets/37616390/6262d873-24b3-418d-b2f9-da5d0ad460aa)
 
 
-Analiza wyników:
+Analiza wyników dla testu 2 - 100 użytkowników:
 
 - Min: 3968 ms (minimalny czas odpowiedzi) - pokazuje najlepszy czas reakcji serwera na żądanie.
 - Max: 159230 ms (maksymalny czas odpowiedzi) - wskazuje na najdłuższy czas odpowiedzi, co może sygnalizować potencjalne wąskie gardła lub problemy z wydajnością pod dużym obciążeniem.
@@ -53,3 +53,5 @@ Analiza wyników:
 - ERROR %: 94,96% - Ten wysoki wskaźnik błędów wskazuje na poważne problemy z aplikacją lub infrastrukturą, które uniemożliwiają prawidłowe funkcjonowanie pod obciążeniem generowanym przez 1000 jednoczesnych użytkowników.
 
 Aplikacja prawdopodobnie napotyka krytyczne błędy podczas przetwarzania żądań, co może być spowodowane przeciążeniem serwera, problemami z kodem aplikacji, problemami z bazą danych lub innymi ograniczeniami systemowymi. Na podstawie analizy może być konieczne optymalizowanie kodu aplikacji, zapytań do bazy danych, konfiguracji serwera (np. pule połączeń, timeouty) oraz infrastruktury (np. load balancing, skalowanie).
+
+Analiza jasno pokazuje, że aplikacja Primate.diet jest przystosowana do niskiej liczby użytkowników, zaś przy zwiększonym ruchu jest wrażliwa na przeciążenia.
